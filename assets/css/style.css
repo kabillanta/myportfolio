@@ -363,7 +363,29 @@ main {
 .info_more-btn:hover::before,
 .info_more-btn:focus::before { background: var(--bg-gradient-yellow-2); }
 
-.info_more-btn span { display: none; }
+.info_more-btn span { 
+  display: inline-block; /* Make the text visible */
+}
+
+/* Ensure the button stays within the screen and shrinks on smaller devices */
+@media (max-width: 767px) {
+  .info_more-btn {
+    font-size: 10px; /* Reduce font size for smaller screens */
+    padding: 6px 10px; /* Reduce padding for smaller button */
+  }
+
+  .info_more-btn span {
+    display: inline-block; /* Ensure text is visible */
+  }
+}
+
+@media (max-width: 480px) {
+  .info_more-btn {
+    font-size: 9px; /* Even smaller font size */
+    padding: 5px 8px; /* Reduce padding even more */
+  }
+}
+
 
 .sidebar-info_more {
   opacity: 0;
