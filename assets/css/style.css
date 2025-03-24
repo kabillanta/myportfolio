@@ -137,7 +137,11 @@ body { background: var(--smoky-black); }
 
 
 
-
+.footer{
+  color: rgb(91, 91, 91);
+  margin: 25px 5px 25px 25px;
+  text-align: right;
+}
 
 /*-----------------------------------*\
   #REUSED STYLE
