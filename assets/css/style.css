@@ -3,7 +3,6 @@
     to bottom right,
     hsl(240, 1%, 25%) 3%,
     hsl(0, 0%, 19%) 97%
-    
   );
   --bg-gradient-jet: linear-gradient(
       to bottom right,
@@ -319,7 +318,7 @@ main {
 \*-----------------------------------*/
 
 .sidebar {
-  margin-bottom: 15px;
+  margin: 0 auto 30px;
   max-height: 112px;
   overflow: hidden;
   transition: var(--transition-2);
@@ -473,6 +472,42 @@ main {
 
 .social-item .social-link:hover {
   color: var(--light-gray);
+}
+
+/*-----------------------------------*\
+  #CV BUTTONS
+\*-----------------------------------*/
+
+.cv-buttons {
+  display: flex;
+  gap: 1px;
+  margin: 10px 0 4px 0; /* reduced bottom space */
+}
+
+.download-cv {
+  padding: 7px 12px;
+  color: white;
+  background-color: #333;
+  text-decoration: none;
+  border-right: 1px solid #222;
+}
+
+.view-cv {
+  padding: 7px 12px;
+  color: white;
+  background-color: #444;
+  border: none;
+  cursor: pointer;
+}
+
+.download-cv:hover {
+  background-color: #555;
+}
+
+/* Hover Effects */
+.download-cv:hover,
+.view-cv:hover {
+  background-color: #555;
 }
 
 /*-----------------------------------*\
