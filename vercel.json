@@ -1,0 +1,9 @@
+{
+  "redirects": [
+    {
+      "source": "/(.*)",
+      "destination": "https://kabillanta.me/$1",
+      "permanent": true
+    }
+  ]
+}
